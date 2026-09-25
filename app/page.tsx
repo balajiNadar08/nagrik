@@ -37,7 +37,7 @@ export default function LandingPage() {
           </h1>
 
           <p className="mt-7 max-w-2xl text-base leading-7 text-[#7f8b9d] md:text-lg">
-            A network-intelligence workspace for exploring people, vehicles,
+            A network-intelligence workspace for analyzing criminals through their personal details, vehicles,
             phone numbers, locations and organizations through connected data.
             Built as a beta prototype for SIH 2026.
           </p>
@@ -45,7 +45,7 @@ export default function LandingPage() {
           <div className="mt-9 flex flex-wrap gap-3">
             <Link
               href="/auth"
-              className="rounded-md bg-[#e7edf5] px-5 py-3 text-sm font-medium text-[#0a0e14] transition hover:bg-white"
+              className="cursor-pointer rounded-md bg-[#e7edf5] px-5 py-3 text-sm font-medium text-[#0a0e14] transition hover:bg-white"
             >
               Enter beta workspace →
             </Link>
@@ -56,6 +56,7 @@ export default function LandingPage() {
               ["01", "Entity mapping", "Connect people, phones, vehicles, places and organizations."],
               ["02", "Relationship graph", "Visualize direct and possible links across the network."],
               ["03", "Lead prioritization", "Surface risk, influence and priority signals for investigation."],
+              ["04", "Case pattern recognition", "Analyze similarity between current and pervious cases."],
             ].map(([number, title, description]) => (
               <div key={number} className="border border-[#202a36] bg-[#0b1017]/80 p-5">
                 <p className="font-mono text-[10px] text-[#526076]">{number}</p>
